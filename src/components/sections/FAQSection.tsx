@@ -31,14 +31,14 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="faq" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg text-subtext-gray font-light">
               Everything you need to know about Northstar Pay
             </p>
           </div>
@@ -50,10 +50,10 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="border border-gray-200 rounded-2xl px-6 shadow-sm hover:shadow-md transition-shadow"
               >
-                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-blue-600 py-6">
+                <AccordionTrigger className="text-left text-lg font-semibold text-primary-dark hover:text-primary-yellow py-6">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pb-6 leading-relaxed">
+                <AccordionContent className="text-subtext-gray pb-6 leading-relaxed font-light">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

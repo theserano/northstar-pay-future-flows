@@ -6,54 +6,52 @@ const offerings = [
   {
     icon: Wallet,
     title: "Create & Fund Your CAD Wallet",
-    description: "Fund via Interac e-Transfer, card, and more. Set up your wallet in minutes with bank-level security.",
-    image: "/placeholder.svg?height=300&width=400"
+    description: "Fund instantly via Interac e-Transfer, card, and more. Set up your secure wallet in minutes with complete peace of mind.",
+    iconColor: "text-blue-600",
+    iconBg: "bg-blue-100"
   },
   {
     icon: Zap,
     title: "Send CAD to African Countries Instantly",
-    description: "Real-time payouts with no guesswork. Your family receives money in minutes, not days.",
-    image: "/placeholder.svg?height=300&width=400"
+    description: "Real-time payouts that your family can count on. Money arrives in minutes, not days, so they're never left waiting.",
+    iconColor: "text-green-600",
+    iconBg: "bg-green-100"
   },
   {
     icon: Eye,
     title: "Enjoy Transparent Rates and Low Fees",
-    description: "No tricks. What you see is what you pay. Always know exactly how much your recipient gets.",
-    image: "/placeholder.svg?height=300&width=400"
+    description: "No surprises, no hidden costs. See exactly what you pay and what your family receives before you send.",
+    iconColor: "text-purple-600",
+    iconBg: "bg-purple-100"
   }
 ];
 
 const ProductOfferings = () => {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="features" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            What You Can Do with <span className="text-blue-600">Northstar Pay</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">
+            What You Can Do with <span className="text-primary-yellow">Northstar Pay</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need to send money home, built with your family in mind
+          <p className="text-lg text-subtext-gray max-w-2xl mx-auto font-light">
+            Everything you need to support your family, built with care and security in mind
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {offerings.map((offering, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-500 border-0 shadow-lg hover:scale-105">
-              <CardContent className="p-8">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-gray-200">
+              <CardContent className="p-8 text-center">
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <offering.icon className="w-8 h-8 text-white" />
+                  <div className={`w-16 h-16 ${offering.iconBg} rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                    <offering.icon className={`w-8 h-8 ${offering.iconColor}`} />
                   </div>
-                  <img 
-                    src={offering.image} 
-                    alt={offering.title}
-                    className="w-full h-48 object-cover rounded-xl mb-4 bg-gradient-to-br from-blue-100 to-indigo-100"
-                  />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-primary-dark mb-4">
                   {offering.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-subtext-gray leading-relaxed font-light">
                   {offering.description}
                 </p>
               </CardContent>
