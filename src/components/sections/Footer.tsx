@@ -1,3 +1,4 @@
+
 import { Shield } from "lucide-react";
 
 const Footer = () => {
@@ -6,8 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="flex items-center justify-center mb-6">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-3">
-              <span className="font-bold text-lg">N</span>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mr-3" style={{ backgroundColor: '#F5C400' }}>
+              <span className="font-bold text-lg text-primary-dark">N</span>
             </div>
             <span className="text-2xl font-bold">Northstar Pay</span>
           </div>

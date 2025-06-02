@@ -6,14 +6,14 @@ import WaitlistForm from "../WaitlistForm";
 const HeroSection = () => {
   return (
     <section id="home" className="relative overflow-hidden bg-white">
-      <div className="relative container mx-auto px-4 py-16 md:py-24">
+      <div className="relative container mx-auto px-6 py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="max-w-xl">
             {/* FINTRAC Badge */}
             <div className="flex justify-start mb-8">
               <Badge variant="secondary" className="bg-gray-100 text-gray-700 border-gray-200 px-4 py-2 text-sm font-medium">
-                <Shield className="w-4 h-4 mr-2" />
+                <Shield className="w-4 h-4 mr-2" style={{ color: '#F5C400' }} />
                 FINTRAC Registered Money Services Business
               </Badge>
             </div>
@@ -78,7 +78,7 @@ const HeroSection = () => {
               <img 
                 src="/lovable-uploads/2507ac42-2e69-420e-8b72-f847ed32443b.png" 
                 alt="Woman sending money with mobile phone"
-                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto mx-auto relative z-10"
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto mx-auto relative z-10 rounded-2xl"
               />
               
               {/* Subtle background glow */}
