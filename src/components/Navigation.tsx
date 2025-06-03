@@ -44,7 +44,7 @@ const Navigation = () => {
             </button>
             <Button 
               onClick={() => scrollToSection('waitlist')}
-              className="bg-primary-yellow hover:bg-yellow-500 text-primary-dark font-medium rounded-full px-6"
+              className="bg-primary-yellow hover:bg-yellow-500 text-primary-dark font-medium rounded-full px-6 animate-bounce hover:animate-pulse transition-all duration-300"
             >
               Join Waitlist
             </Button>
@@ -83,7 +83,7 @@ const Navigation = () => {
               </button>
               <Button 
                 onClick={() => scrollToSection('waitlist')}
-                className="bg-primary-yellow hover:bg-yellow-500 text-primary-dark font-medium rounded-full px-6 w-fit"
+                className="bg-primary-yellow hover:bg-yellow-500 text-primary-dark font-medium rounded-full px-6 w-fit animate-bounce hover:animate-pulse transition-all duration-300"
               >
                 Join Waitlist
               </Button>
