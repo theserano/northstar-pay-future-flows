@@ -14,7 +14,7 @@ const WaitlistSection = () => {
             Your family deserves better than long waits and hidden fees.
           </p>
           
-          <div className="max-w-md mx-auto">
+          <div className="w-full max-w-md mx-auto px-4 sm:px-0">
             <WaitlistForm />
           </div>
         </div>

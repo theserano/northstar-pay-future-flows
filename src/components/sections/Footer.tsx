@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-dark text-white py-12">
+    <footer style={{ backgroundColor: '#3E2D00' }} className="text-white py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="flex items-center justify-center mb-6">
@@ -14,13 +14,17 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center justify-center gap-2 mb-6">
-            <Shield className="w-5 h-5 text-blue-400" />
+            <Shield className="w-5 h-5" style={{ color: '#F5C400' }} />
             <span className="text-gray-300">FINTRAC Registered Money Services Business</span>
           </div>
           
-          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
             Connecting families across borders with secure, instant, and affordable money transfers. 
             Your trust is our foundation.
+          </p>
+          
+          <p className="text-gray-500 text-sm mb-8">
+            2 Lansing Square, Suite 707, North York, Ontario, M2J4P8, Canada
           </p>
           
           <div className="border-t border-gray-800 pt-6">
