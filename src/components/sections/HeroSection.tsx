@@ -78,7 +78,7 @@ const HeroSection = () => {
               <img 
                 src="/lovable-uploads/2507ac42-2e69-420e-8b72-f847ed32443b.png" 
                 alt="Woman sending money with mobile phone"
-                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto mx-auto relative z-10 rounded-2xl animate-bounce hover:scale-105 transition-transform duration-500"
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto mx-auto relative z-10 rounded-2xl hover:scale-105 transition-transform duration-500"
               />
               
               {/* Subtle background glow */}
