@@ -29,7 +29,7 @@ const Footer = () => {
           
           <div className="border-t border-gray-800 pt-6">
             <p className="text-gray-500 text-sm">
-              © 2024 Northstar Pay. All rights reserved. Made with ❤️ for the global community.
+              © 2025 Northstar Pay. All rights reserved. Made with ❤️ for the global community.
             </p>
           </div>
         </div>

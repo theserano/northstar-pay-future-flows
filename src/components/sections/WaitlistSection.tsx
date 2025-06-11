@@ -15,7 +15,7 @@ const WaitlistSection = () => {
           </p>
           
           <div className="w-full max-w-md mx-auto px-4 sm:px-0">
-            <WaitlistForm />
+            <WaitlistForm labelClass="!text-gray-300" inputClass="!text-gray-300 !placeholder-gray-300" />
           </div>
         </div>
       </div>
