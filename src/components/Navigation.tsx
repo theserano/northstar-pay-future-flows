@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +43,18 @@ const Navigation = () => {
             >
               FAQ
             </button>
+            <Link 
+              to={`/privacy-policy`}
+              className="text-gray-700 hover:text-primary-dark transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link 
+              to={`/terms-of-service`}
+              className="text-gray-700 hover:text-primary-dark transition-colors"
+            >
+              Terms
+            </Link>
             <Button 
               onClick={() => scrollToSection('waitlist')}
               className="bg-primary-yellow hover:bg-yellow-500 text-primary-dark font-medium rounded-full px-6"
